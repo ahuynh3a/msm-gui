@@ -20,9 +20,6 @@ class MoviesController < ApplicationController
 
 
   def create
-   #params hash looks like this: 
-
-   #Parameters: {"the_title"=>"1", "the_year"=>"1", "the_duration"=>"1", "the_descirption"=>"1", "the_image"=>"1", "the_director_id"=>"1"}
 
     m= Movie.new
     m.title = params.fetch("the_title")
